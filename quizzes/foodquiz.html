@@ -1,0 +1,220 @@
+<html>
+    <head>
+        
+        <title>Magister - The online knowledge platform</title>
+        
+        <!-- CSS files -->
+        <link href="quizstyle.css" rel="stylesheet">
+        <link href="..\stylesheet.css" rel="stylesheet">
+
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+             
+        <header>
+            <nav>            
+                <div  id="tools">
+                    <!-- <img id="logo" href="assets\img\images\Bevanda_logo.jpg" alt="logo"> -->
+                    <h1 data-aos="flip-left" data-aos-duration="5000" id="website-name">MAGISTER<sub id="tagline">Knowledge is Power</sub></h1>
+                    <ul id="list" class="navmenu">
+                        <a href="..\index.html">Home</a>
+                        <a href="..\index.html">Quiz</a>
+                        <a href="#dashboard">Dashboard</a>
+                    </ul>
+                </div>
+            </nav>            
+        </header>
+        <br><br><br>
+        <section>
+            <div id="quiz">Food Quiz</div>
+            <form method="GET" target="blank">
+            <div id="que">
+                <p id="q">1. What is the cost of the most expensive pizza in the world?</p>
+                <div id="options">
+                    <label><input type="radio" name="que_1" id="1" value="12,000" required />$ 12,000</label>
+                    <br>
+
+                    <label><input type="radio" name="que_1" id="2" value="11,000" />$ 11,000</label>
+                    <br>
+
+                    <label><input type="radio" name="que_1" id="3" value="13,000" />$ 13,000</label>
+                    <br>
+
+                    <label><input type="radio" name="que_1" id="4" value="14,000" />$ 14,000</label>
+                    <br>
+                    <button onclick="reset1()">Clear response</button>
+                    
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">2. Which fruit can help improve your mood and lower blood pressure?</p>  
+                <div id="options">
+                    <label><input type="radio" name="que_2" id="5" value="apples" required>Apples</label>
+                    <br>
+
+                    <label><input type="radio" name="que_2" id="6" value="bananas" >Bananas</label>
+                    <br>
+
+                    <label><input type="radio" name="que_2" id="7" value="kiwi" >Kiwi</label>
+                    <br>
+
+                    <label><input type="radio" name="que_2" id="8" value="guava">Guava</label>
+                    <br>
+                    <button onclick="reset2()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">3. What is the most stolen food in the world??</p>  
+                <div id="options">
+                    <label><input type="radio" name="que_3" id="9" value="cashew" required>Cashew Nuts</label> 
+                    <br>
+
+                    <label><input type="radio" name="que_3" id="10" value="choco" >Chocolate</label>
+                    <br>
+
+                    <label><input type="radio" name="que_3" id="11" value="butter" >Butter</label>
+                    <br>
+
+                    <label><input type="radio" name="que_3" id="12" value="cheese">Cheese</label>
+                    <br>
+                    <button onclick="reset3()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">4. How many hamburgers McDonald’s sells  every year??</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_4" id="13" value="2.5" required>2.5 billion</label>
+                    <br>
+
+                    <label><input type="radio" name="que_4" id="14" value="1.5" >1.5 billion</label>
+                    <br>
+
+                    <label><input type="radio" name="que_4" id="15" value="3.0" >3.0 billion</label>
+                    <br>
+
+                    <label><input type="radio" name="que_4" id="16" value="2.0">2.0 billion</label>
+                    <br>
+                    <button onclick="reset4()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">5. Where did the French fries originated?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_5" id="17" value="china" required>China</label>
+                    <br>
+
+                    <label><input type="radio" name="que_5" id="18" value="america" >America</label>
+                    <br>
+
+                    <label><input type="radio" name="que_5" id="19" value="belgium" >Belgium</label>
+                    <br>
+
+                    <label><input type="radio" name="que_5" id="20" value="india">India</label>
+                    <br>
+                    <button onclick="reset5()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">6. Which of these drinks contain orange juice?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_6" id="21" value="mountain" required>Mountain Dew</label>
+                    <br>
+
+                    <label><input type="radio" name="que_6" id="22" value="sprite" >Sprite</label>
+                    <br>
+
+                    <label><input type="radio" name="que_6" id="23" value="cocacola" >Coca Cola</label>
+                    <br>
+
+                    <label><input type="radio" name="que_6" id="24" value="Thumbsup">Thumbs Up</label>
+                    <br>
+                    <button onclick="reset6()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">7. What is the name of the single-portion take-out or home-packed meal of Japanese origin?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_7" id="25" value="wood" required>Wooden Box</label>
+                    <br>
+
+                    <label><input type="radio" name="que_7" id="26" value="metal" >Metal box</label>
+                    <br>
+
+                    <label><input type="radio" name="que_7" id="27" value="bento" >Bento Box</label>
+                    <br>
+
+                    <label><input type="radio" name="que_7" id="28" value="plastic">Plastic Box</label>
+                    <br>
+                    <button onclick="reset7()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">8. Drinking two cups of what a day prevented memory decline according to Harvard study?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_8" id="29" value="hot" required>Hot Chocolate</label>
+                    <br>
+
+                    <label><input type="radio" name="que_8" id="30" value="water" >Water</label>
+                    <br>
+
+                    <label><input type="radio" name="que_8" id="31" value="tea" >Tea</label>
+                    <br>
+
+                    <label><input type="radio" name="que_8" id="32" value="coffee">Coffee</label>
+                    <br>
+                    <button onclick="reset8()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">9. Pistachio is a?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_9" id="33" value="fruit" required>Fruit</label>
+                    <br>
+
+                    <label><input type="radio" name="que_9" id="34" value="vegetable" >Vegetable</label>
+                    <br>
+
+                    <label><input type="radio" name="que_9" id="35" value="cereal" >Cereal</label>
+                    <br>
+
+                    <label><input type="radio" name="que_9" id="36" value="seed">seed</label>
+                    <br>
+                    <button onclick="reset9()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">10. Which of these is not a chocolate?</p>
+                <div id="options">
+                    <label><input type="radio" name="que_10" id="37" value="black" required>Black chocolate</label>
+                    <br>
+
+                    <label><input type="radio" name="que_10" id="38" value="white" >White Chocolate</label>
+                    <br>
+
+                    <label><input type="radio" name="que_10" id="39" value="dark" >Dark Chocolate</label>
+                    <br>
+
+                    <label><input type="radio" name="que_10" id="40" value="friutnut">Fruit n Nuts</label>
+                    <br>
+                    <button onclick="reset10()">Clear response</button>
+                </div>
+            </div><br>
+            <a><button onclick="Myfunction()">Submit</button></a>
+            <button onclick="reset()">Reset all the Answers</button>
+        </form>
+        </section>
+        <script src="foodquiz.js"></script>
+        <script src="reset.js"></script>
+    </body>

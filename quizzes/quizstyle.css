@@ -1,0 +1,130 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    transition: 0.3s;
+}
+
+#website-name{
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+    border: red;
+}
+
+#tagline{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+}
+
+#list{
+    position: relative;
+    left: 150px;
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+
+#tools{
+    padding: 15px;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    z-index: 1;
+    color: white;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    background-color: #ee3ec9;
+}
+
+.navmenu { 
+    display: inline;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 200px;
+}
+
+.navmenu>a{
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: font-size 0.3s, border-color 1s;
+    border-width: 0 0 1px 0;
+    border-color: #ee3ec9;
+    border-style: solid;
+    border-bottom-left-radius: 10px;
+    padding: 0 0 3px 0;
+    z-index: -1;
+    color: white;
+    text-decoration: none;
+}
+
+.navmenu>a:hover{
+    font-size: 30px;
+    border-color: white;
+}
+
+#lognsign{
+    position: relative;
+    left: 420px;
+}
+
+.buttons{
+    display: inline-block;
+    color: white;
+    border: 5px;
+    border-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.buttons>a{
+    transition: font-size 0.3s;
+    margin-left:8px;
+    margin-right: 8px;
+}
+
+.buttons>a:hover{
+    font-size: 20px;
+}
+
+/* Questions: */
+
+#q{
+    font-style: 'Abril Fatface', cursive;
+    font-size: 25px;
+    margin: 15px;
+}
+
+#que{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    align-content: center;
+    box-shadow: 2px 2px black;
+    opacity: 0.8;
+    position: relative;
+    top: 30px;
+}
+
+#options{
+    position: relative;
+    left: 30px;
+}
+
+#quiz{
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}

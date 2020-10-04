@@ -1,0 +1,219 @@
+<html>
+    <head>
+        
+        <title>Magister - The online knowledge platform</title>
+        
+        <!-- CSS files -->
+        <link href="quizstyle.css" rel="stylesheet">
+        <link href="..\stylesheet.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+             
+        <header>
+            <nav>            
+                <div  id="tools">
+                    <!-- <img id="logo" href="assets\img\images\Bevanda_logo.jpg" alt="logo"> -->
+                    <h1 data-aos="flip-left" data-aos-duration="5000" id="website-name">MAGISTER<sub id="tagline">Knowledge is Power</sub></h1>
+                    <ul id="list" class="navmenu">
+                        <a href="..\index.html">Home</a>
+                        <a href="..\index.html">Quiz</a>
+                        <a href="Dashboard.html">Dashboard</a>
+                    </ul>
+                </div>
+            </nav>            
+        </header>
+        <br><br><br>
+        <section>
+            <div id="quiz">Travel Quiz</div>
+            <form method="POST" target="blank">
+            <div id="que">
+                <p id="q">1. One-third of the world’s airports are located in?</p>
+                <div id="options">
+                    <label><input type="radio" name="que_1" id="1" value="usa" required />USA</label>
+                    <br>
+
+                    <label><input type="radio" name="que_1" id="2" value="india" />India</label>
+                    <br>
+
+                    <label><input type="radio" name="que_1" id="3" value="china" />China</label>
+                    <br>
+
+                    <label><input type="radio" name="que_1" id="4" value="Russia" />Russia</label>
+                    <br>
+                    <button onclick="reset1()">Clear response</button>
+                    
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">2. What percentage of total lakes in the world are situated in canada?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_2" id="5" value="75" required>75%</label>
+                    <br>
+
+                    <label><input type="radio" name="que_2" id="6" value="45" >45%</label>
+                    <br>
+
+                    <label><input type="radio" name="que_2" id="7" value="60" >60%</label>
+                    <br>
+
+                    <label><input type="radio" name="que_2" id="8" value="55">55%</label>
+                    <br>
+                    <button onclick="reset2()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">3. Which country has no rivers?</p>  
+                <div id="options">
+                    <label><input type="radio" name="que_3" id="9" value="russia" required>Russia</label> 
+                    <br>
+
+                    <label><input type="radio" name="que_3" id="10" value="saudi" >Saudi Arabia</label>
+                    <br>
+
+                    <label><input type="radio" name="que_3" id="11" value="china" >China</label>
+                    <br>
+
+                    <label><input type="radio" name="que_3" id="12" value="cambodia">Cambodia</label>
+                    <br>
+                    <button onclick="reset3()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">4. What is the temperature outside of your plane during normal flight?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_4" id="13" value="45" required>45 F</label>
+                    <br>
+
+                    <label><input type="radio" name="que_4" id="14" value="-45" >-45 F</label>
+                    <br>
+
+                    <label><input type="radio" name="que_4" id="15" value="60" >60 F</label>
+                    <br>
+
+                    <label><input type="radio" name="que_4" id="16" value="-60">-60 F</label>
+                    <br>
+                    <button onclick="reset4()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">5. How many people work at Eiffel Tower every day?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_5" id="17" value="800" required>800</label>
+                    <br>
+
+                    <label><input type="radio" name="que_5" id="18" value="500" >500</label>
+                    <br>
+
+                    <label><input type="radio" name="que_5" id="19" value="600" >600</label>
+                    <br>
+
+                    <label><input type="radio" name="que_5" id="20" value="400">400</label>
+                    <br>
+                    <button onclick="reset5()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">6. Which country covers more time zones than any country on the planet?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_6" id="21" value="china" required>China</label>
+                    <br>
+
+                    <label><input type="radio" name="que_6" id="22" value="india" >India</label>
+                    <br>
+
+                    <label><input type="radio" name="que_6" id="23" value="russia" >Russia</label>
+                    <br>
+
+                    <label><input type="radio" name="que_6" id="24" value="france">France</label>
+                    <br>
+                    <button onclick="reset6()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">7. How many selfies are taken around the world every minute roughly??</p>  
+                <div id="options">
+                    <label><input type="radio" name="que_7" id="25" value="64500" required>64500</label>
+                    <br>
+
+                    <label><input type="radio" name="que_7" id="26" value="6500" >6500</label>
+                    <br>
+
+                    <label><input type="radio" name="que_7" id="27" value="64600" >64600</label>
+                    <br>
+
+                    <label><input type="radio" name="que_7" id="28" value="6600">6600</label>
+                    <br>
+                    <button onclick="reset7()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">8. How many beaches are there in Australia?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_8" id="29" value="9500" required>9500</label>
+                    <br>
+
+                    <label><input type="radio" name="que_8" id="30" value="9900" >9900</label>
+                    <br>
+
+                    <label><input type="radio" name="que_8" id="31" value="10000" >10000</label>
+                    <br>
+
+                    <label><input type="radio" name="que_8" id="32" value="10500">10500</label>
+                    <br>
+                    <button onclick="reset8()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">9. Which City sinks by up to 15 inches a year in certain places?</p> 
+                <div id="options">
+                    <label><input type="radio" name="que_9" id="33" value="mexico" required>Mexico</label>
+                    <br>
+
+                    <label><input type="radio" name="que_9" id="34" value="newyork" >New York City</label>
+                    <br>
+
+                    <label><input type="radio" name="que_9" id="35" value="vatican" >Vatican City</label>
+                    <br>
+
+                    <label><input type="radio" name="que_9" id="36" value="mumbai">Mumbai</label>
+                    <br>
+                    <button onclick="reset9()">Clear response</button>
+                </div>
+            </div><br>
+
+            <div id="que">
+                <p id="q">10. Which country is the most diverse country in the world in almost every way?</p>
+                <div id="options">
+                    <label><input type="radio" name="que_10" id="37" value="india" required>India</label>
+                    <br>
+
+                    <label><input type="radio" name="que_10" id="38" value="russia" >Russia</label>
+                    <br>
+
+                    <label><input type="radio" name="que_10" id="39" value="nepal" >Nepal</label>
+                    <br>
+
+                    <label><input type="radio" name="que_10" id="40" value="china">China</label>
+                    <br>
+                    <button onclick="reset10()">Clear response</button>
+                </div>
+            </div><br>
+            <a><button onclick="Myfunction()">Submit</button></a>
+            <button onclick="reset()">Reset all the Answers</button>
+        </form>
+        </section>
+        <script src="travelquiz.js"></script>
+        <script src="reset.js"></script>
+    </body>
