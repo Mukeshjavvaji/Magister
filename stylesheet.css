@@ -48,11 +48,6 @@ header{
     background-color: #ee3ec9;
 }
 
-
-    
-
-
-
 .navmenu { 
     display: inline;
     color: white;
@@ -122,12 +117,12 @@ header{
     left: 10px;
 }
 
-.quiz>a>div{
-    text-decoration: none;
-}
-
 .quiz>h1{
     font-style: 'Abril fatface', cursive;
+}
+
+a:link{
+    text-decoration: none!important;
 }
 
 .quiz>a{
@@ -147,11 +142,11 @@ header{
     background-color: #44318d;
     color: white; 
     z-index: 2;
-    text-decoration: none;
 }
 
 .quiz>a:hover{
     font-size: 40px;
+    text-decoration: none;
 }
 
 #dash{
